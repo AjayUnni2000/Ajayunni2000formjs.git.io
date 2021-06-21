@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body background="mmt.jpg" align="center">
+<form name="registration"  onsubmit="return validation()" method="post">
+  <table align="center" width="800px" height=800px">
+  <tr>
+   <td width="500" height="500" margin="10" bgcolor="white" style="color:black; padding: 20px;">
+    <center><h1><font color="orange">Register Now!!!</font></h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr color="orange"></center>
+
+    <input type="text" placeholder="First Name" name="fname" id="fname"/><br><br>
+    <input type="text" placeholder="Last Name" name="lname" id="lname"/><br><br>
+
+    <label for="dob"><h4><b>Date Of Birth:</b></h4></label>    
+    <input type="date" placeholder="Enter date" name="dob" id="dob"><br><br>
+
+    <label for="gender"><b><h4>Gender:</h4></b></label>
+    <input type="radio" name="gender" id="gender" value="Male"><font size="4">Male</font> &ensp;
+    <input type="radio" name="gender" id="gender" value="Female"><font size="4">Female</font> &ensp; 
+    <input type="radio" name="gender" id="gender" value="Others"><font size="4">Others</font><br><br>
+
+    <label for="qul"><b><h4>Highest Qualification:</h4></b></label>
+    <select name="dropdown" class="required">
+    <option value="Post-Graduate" selected><font size="4">Post-Graduate</font></option>
+    <option value="Graduate" selected><font size="4">Graduate</font></option>
+    <option value="XII" selected><font size="4">XII</font></option>
+    <option value="X" selected><font size="4">X</font></option>
+    <option value="Others" selected><font size="4">Others</font></option></select><br><br>
+
+    <textarea rows="5" placeholder="Enter Your Address" name="address" id="address"></textarea><br><br>
+
+    <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter Email" name="email" id="email"/><br><br>
+
+    <input type="text" maxlength="10" pattern="\d{10}" placeholder="Enter Phone Number" name="phnum" id="phnum"/><br><br>
+
+  
+    <input type="text" placeholder="Enter Username" name="uname" id="uname"/><br><br>
+
+    <input type="password" placeholder="Enter Password" name="psw" id="psw"/><br><br>
+
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="pswrepeat"/><br><br></h3>
+    <hr color="orange">
+    
+    <input type="checkbox" name"chk" id="chk" value="on"><font size="4">I accept the Terms & Conditions</font><br><br>
+
+    <input type="submit" name="submit" value="Submit"/> &ensp;
+    <input type="reset" name="reset" value="Reset"/>
+  
+   </td>
+  </tr>
+  </table>
+</form>
+<script type="text/javascript"src="registration.js"></script>
+</body>
+</html>

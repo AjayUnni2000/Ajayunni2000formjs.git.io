@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body background="mmt.jpg" align="center">
+<form name="login"  onsubmit="return validation()" method="post">
+  <table align="center" width="500px" height="300px" style="margin-top:100px">
+  <tr>
+   <td width="500" height="350" margin="10" bgcolor="white" style="color:orange; padding: 20px;">
+    <center><h1>Login Here!!!</h1>
+    <hr color="#606060"></center>
+
+    <input type="text" placeholder="Enter Username" name="uname" id="uname"><br><br>
+
+    <input type="password" placeholder="Enter Password" name="psw" id="psw"><br><br>
+
+    <input type="submit" name="submit" value="Sign in" onclick="alertme()"/>
+    <input type="reset" name="submit" value="Cancel"/>
+
+   </td>
+  </tr>
+  </table>
+  <script type="text/javascript"src="login.js"></script>
+</form>
+</body>
+</html>
